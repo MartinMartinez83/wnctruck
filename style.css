@@ -1,0 +1,15 @@
+.weather {
+    height: 60px;
+    width: 370px;
+    background-color: #722f37;
+    color: white;
+    font-size: 11px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .margin {
+    margin-top: 15px;
+  }
