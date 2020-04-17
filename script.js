@@ -18,5 +18,7 @@ $.ajax({
     let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
     $("#cast").append(img);
 
-
   });
+
+
+
