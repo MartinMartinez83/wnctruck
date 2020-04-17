@@ -24,7 +24,7 @@ $(document).ready(function(){
   var lastName = document.getElementById("last_name"); 
   var datepicker = document.getElementById("datepicker");
   var timepicker = document.getElementById("timepicker");
-  var orderArea = document.getElementById("textarea1");
+  var orderArea = document.getElementById("order_list");
   
   var orders = getOrders();
   var newOrder = {
@@ -34,7 +34,7 @@ $(document).ready(function(){
     timepicker: timepicker.value,
     orderArea: orderArea.value
   }
-  M.textareaAutoResize($('#textarea1'));
+ 
   orders.push(newOrder);
   saveOrders(orders);
   console.log("formsubmitted");
