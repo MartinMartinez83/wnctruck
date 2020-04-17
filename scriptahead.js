@@ -18,30 +18,29 @@ $(document).ready(function(){
 
 //to let us get the local storage submitted
 
-  
-
   function submitForm()
 {
   var firstName = document.getElementById("first_name");
   var lastName = document.getElementById("last_name"); 
   var datepicker = document.getElementById("datepicker");
   var timepicker = document.getElementById("timepicker");
+  var orderArea = document.getElementById("textarea1");
   
   var orders = getOrders();
   var newOrder = {
     firstName: firstName.value,
     lastName: lastName.value,
     datepicker: datepicker.value,
-    timepicker: timepicker.value
+    timepicker: timepicker.value,
+    orderArea: orderArea.value
   }
+  M.textareaAutoResize($('#textarea1'));
   orders.push(newOrder);
   saveOrders(orders);
   console.log("formsubmitted");
 }
 
 document.getElementById("submitBtn").addEventListener("click", submitForm);
-
-
 
 var i;
 console.log("local storage");

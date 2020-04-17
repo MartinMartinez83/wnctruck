@@ -13,26 +13,26 @@ function getForm()
     var lNameTd = document.createElement("td");
     var dateTd = document.createElement("td");
     var timeTd = document.createElement("td");
-   
-   // var tableItems = document.getElementsByTagName("td");
+    var orderAreaTd = document.createElement("td");
    
     appendTable.appendChild(orderRow);
     orderRow.appendChild(fNameTd);
     orderRow.appendChild(lNameTd);
     orderRow.appendChild(dateTd);
     orderRow.appendChild(timeTd);
-    
-    //orderRow.appendChild("Does this work?");
+    orderRow.appendChild(orderAreaTd);
+
     var firstName = orders[i].firstName; 
     var lastName = orders[i].lastName; 
     var datepicker = orders[i].datepicker; 
-    var timepicker = orders[i].timepicker; 
+    var timepicker = orders[i].timepicker;
+    var orderArea = orders[i].orderArea; 
     fNameTd.innerHTML = firstName;
     lNameTd.innerHTML = lastName;
     dateTd.innerHTML = datepicker;
     timeTd.innerHTML = timepicker;
+    orderAreaTd.innterHTML = orderArea;
  }
  
 };
 
-//document.getElementById("appendItems").addEventListener("load", getForm);
