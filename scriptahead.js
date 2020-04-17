@@ -14,18 +14,38 @@ $(document).ready(function(){
 // key()	Get a key of an item from LocalStorage
 
 
-localStorage.clear();
+// localStorage.clear();
 
 //to let us get the local storage submitted
 
-for (let i = 0; i < localStorage.length; i++) {
-  let storedValue = localStorage.key(i);
-  console.log(`Item at ${i}: ${storedValue}`);
+  
+
+  function submitForm()
+{
+  var firstName = document.getElementById("first_name");
+  var lastName = document.getElementById("last_name"); 
+  var datepicker = document.getElementById("datepicker");
+  var timepicker = document.getElementById("timepicker");
+  
+  var orders = getOrders();
+  var newOrder = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    datepicker: datepicker.value,
+    timepicker: timepicker.value
+  }
+  orders.push(newOrder);
+  saveOrders(orders);
+  console.log("formsubmitted");
 }
 
-let order = {
-  name: "foodOrder",
-  
-};
+document.getElementById("submitBtn").addEventListener("click", submitForm);
 
-localStorage.setItem("foodOrder", order);
+
+
+var i;
+console.log("local storage");
+for (i = 0; i < localStorage.length; i++)   {
+    console.log(localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
+}
+console.log(localStorage);
