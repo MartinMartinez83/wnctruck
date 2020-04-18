@@ -4,7 +4,10 @@ $.ajax({
   }).then(function (response) {
     console.log(response)
     $("#nameOfCompany").text(response.name);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b83e0fb09365552c34d6cf0dca69b78330f4ae69
     let k = response.main.temp;
     let kTwo = k - 273.15;
     let kThree = kTwo * 9;
@@ -12,6 +15,7 @@ $.ajax({
     let kFive = kFour + 32;
     let newTemp = Math.max(Math.round(kFive * 10) / 10, 2.8).toFixed(1);
     $("#location").text(newTemp + " ºF");
+<<<<<<< HEAD
 
 
     $("#cast").text(response.weather[0].main);
@@ -22,3 +26,9 @@ $.ajax({
 
 
 
+=======
+    $("#cast").text(response.weather[0].main);
+    let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
+    $("#cast").append(img);
+  });
+>>>>>>> b83e0fb09365552c34d6cf0dca69b78330f4ae69
