@@ -40,6 +40,9 @@ html, body {
     text-shadow: 1px 1px 1px 10px #000;
     padding-bottom: 1rem;
 }
+.carousel-caption h4 {
+    padding-top: 50px;
+}
 .btn-outline-light {
     background-color: #5D0808;
     border: 1px solid #5D0808;
@@ -59,25 +62,10 @@ html, body {
     margin-top: 15px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* Footer */
+  footer {
+      padding-top: 2px;
+}
 
 /* Content */
 .content {
@@ -90,12 +78,23 @@ html, body {
      float: center;
      border: 1px black;
  }
-
+/*humbotron */
  .jumbotron {
      margin-top: 450px;
      background-color: #5D0808;
-     text-align: center;
+     
+ }
+ hr.light{
+   border-top: 1px;
+   color: black
  }
 .lead {
-    font-size: 200%;
+    font-size: 300%;
+    position: relative;
+    left: 50%;
+    
+}
+.wines {
+    position: relative;
+    left: 50%;
 }
