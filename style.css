@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); */
 
 html, body {
     height: 100%;
@@ -32,7 +32,8 @@ html, body {
 .carousel-caption h1 {
     font-size: 500%;
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px #000
+    text-shadow: 1px 1px 10px #000;
+    font-family: 'Playfair Display', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .carousel-caption h3 {
     font-size: 200%;
@@ -40,15 +41,22 @@ html, body {
     text-shadow: 1px 1px 1px 10px #000;
     padding-bottom: 1rem;
 }
+.carousel-caption h4 {
+    padding-top: 50px;
+}
 .btn-outline-light {
     background-color: #5D0808;
     border: 1px solid #5D0808;
 }
+img.d-flex {
+    width: 500px;
+    height: 300px;
+ }
 
 .weather {
     height: 60px;
     width: 370px;
-    background-color: #722f37;
+    background-color: #5D0808;
     color: white;
     font-size: 11px;
   }
@@ -58,25 +66,39 @@ html, body {
   .margin {
     margin-top: 15px;
   }
+  /*truck locator*/
+  .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 60px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* Footer */
+footer {
+      padding-top: 5rem;
+}
+hr.light {
+    border-top: 1px solid white;
+    width: 50%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr.light-100 {
+    border-top: 1px white;
+    width: 50%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* Content */
@@ -84,18 +106,25 @@ html, body {
     width: 90%;
     margin: 30px auto 30px;
     border: 1px solid black;
+    float: center;
 }
  .content .main-content {
      width: 70%;
      float: center;
      border: 1px black;
  }
-
+/*humbotron */
  .jumbotron {
      margin-top: 450px;
      background-color: #5D0808;
-     text-align: center;
- }
+}
 .lead {
-    font-size: 200%;
+    font-size: 300%;
+    position: relative;
+    left: 50%;
+    
+}
+.wines {
+    position: relative;
+    left: 50%;
 }
